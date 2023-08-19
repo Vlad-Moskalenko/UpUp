@@ -1,15 +1,16 @@
 .nav {
-  font-family: OpenSans;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.5;
-  color: var(--text-description);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.44;
+  letter-spacing: -0.72px;
+  color: var(--text-white);
 }
 
 .navigation {
   display: flex;
   justify-content: center;
-  gap: 46px;
+  gap: 50px;
 
   text-transform: capitalize;
 }

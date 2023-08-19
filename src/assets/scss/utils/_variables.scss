@@ -5,25 +5,24 @@
 }
 
 :root {
-  --main: #7F3A6A;
-  --secondary: #E9A923;
+  --main: #F08620;
 
   /* TEXT COLORS */
-  --text-title: #313131;
-  --text-description: #585858;
+  --text-title: #25272F;
+  --text-description: #67687A;
   --text-white: #FFFFFF;
+  --text-trial: #F5FFCC;
 
   /* BACKGROUND COLORS */
-  --bg-footer: #F9F1EE;
-  --bg-partners: #F1E9EE;
+  --bg-hero: #B0008E;
   --bg-white: #FFFFFF;
 
   /* BORDER */
   --border-radius: 5px;
 
   /* FONTS */
-  --primary-font: 'OpenSans', sans-serif;
-  --secondary-font: 'Exo', sans-serif;
+  --primary-font: 'Poppins', sans-serif;
+  --secondary-font: 'SourceSans', sans-serif;
 
   /* ANIMATIONS SPEED */
   --fast: 0.2s;

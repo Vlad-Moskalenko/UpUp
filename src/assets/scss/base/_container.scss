@@ -1,19 +1,19 @@
 .container {
   width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-right: auto;
   margin-left: auto;
 
   @include mq(mobile) {
-    max-width: 480px;
+    max-width: 375px;
     margin-right: auto;
     margin-left: auto;
   }
 
   @include mq(desktop) {
-    max-width: 1440px;
-    padding-left: 150px;
-    padding-right: 150px;
+    max-width: 1600px;
+    padding-left: 180px;
+    padding-right: 180px;
   }
 }

@@ -1,6 +1,6 @@
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 31px;
+  padding-bottom: 31px;
   width: 100%;
 
   position: absolute;
@@ -13,14 +13,10 @@
   align-items: center;
 }
 
-.menu__container {
-  display: none;
-
-  @include mq(desktop) {
-    display: flex;
-    align-items: baseline;
-    gap: 64px;
-  }
+.btn-wrapper {
+  display: flex;
+  align-self: flex-start;
+  gap: 20px;
 }
 
 .burger-menu {

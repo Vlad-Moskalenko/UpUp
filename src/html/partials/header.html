@@ -1,16 +1,32 @@
 <header id="header" class="header">
   <div class="header__container container">
     <a href="./index.html">
-      <img class="logo" src="./assets/images/logo.svg" alt="company logo" />
+      <svg width="129px" height="58px" aria-label="logo">
+        <use href="./assets/images/sprite.svg#icon-logo"></use>
+      </svg>
     </a>
-    <div class="menu__container">
-      {% include 'components/nav-menu.html' %}
-      <button class="main-btn" type="button">sign up</button>
+    {% include 'components/nav-menu.html' %}
+    <div class="btn-wrapper">
+      <button class="" type="button">
+        <svg width="29px" height="29px" aria-label="search button">
+          <use href="./assets/images/sprite.svg#icon-search"></use>
+        </svg>
+      </button>
+      <button class="" type="button">
+        <svg width="21.2px" height="26.5px" aria-label="login button">
+          <use href="./assets/images/sprite.svg#icon-user"></use>
+        </svg>
+      </button>
+      <button class="" type="button">
+        <svg width="32px" height="32px" aria-label="basket button">
+          <use href="./assets/images/sprite.svg#icon-basket"></use>
+        </svg>
+      </button>
     </div>
-    <button class="burger-menu" type="button" aria-label="navigation menu" data-burger-menu>
+    <!-- <button class="burger-menu" type="button" aria-label="navigation menu" data-burger-menu>
       <svg width="24px" height="24px" aria-label="navigation menu icon">
         <use href="./assets/images/sprite.svg#icon-burger"></use>
       </svg>
-    </button>
+    </button> -->
   </div>
 </header>

@@ -18,8 +18,8 @@ body {
   font-family: var(--primary-font);
   color: var(--text-description);
 
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 18px;
+  line-height: 1.78;
 
   background: var(--bg-white);
 }
@@ -30,10 +30,6 @@ html>body>.page {
   overflow: auto;
 
   scroll-behavior: smooth;
-}
-
-address {
-  font-style: normal;
 }
 
 h1,
@@ -62,16 +58,13 @@ ul {
   list-style: none;
 }
 
-.page {
-  background-image: url('../images/hero/bg-mobile.svg');
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-attachment: local;
-  background-size: contain;
+button {
+  padding: 0;
+  border: none;
 
-  @include mq(desktop) {
-    background-image: url('../images/hero/bg-desktop.svg');
-  }
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .visually-hidden {
@@ -87,19 +80,6 @@ ul {
 
 .scroll-hidden {
   overflow: hidden;
-}
-
-.nowrap {
-  white-space: nowrap;
-}
-
-button {
-  padding: 0;
-  border: none;
-
-  color: inherit;
-  background-color: transparent;
-  cursor: pointer;
 }
 
 .title {
@@ -140,26 +120,6 @@ button {
   color: var(--text-description);
 }
 
-.logo {
-  width: 145.5px;
-  height: 36px;
-
-  @include mq(desktop) {
-    width: 194px;
-    height: 48px;
-  }
-}
-
-.image {
-  margin: 0 auto;
-  width: 285px;
-
-  @include mq(desktop) {
-    margin: 0;
-    width: 461px;
-  }
-}
-
 .accent-btn {
   width: 170px;
   padding: 12px 24px;
@@ -183,45 +143,5 @@ button {
 
   @include mq(desktop) {
     font-weight: 700 ;
-  }
-}
-
-.main-btn {
-  @extend .accent-btn;
-  width: 111px;
-
-  background-color: var(--main);
-  color: var(--text-white);
-
-  &:hover,
-  &:focus {
-    color: var(--text-white);
-    background-color: var(--secondary);
-  }
-}
-
-.text-underline {
-  position: relative;
-  z-index: 1;
-
-  white-space: nowrap;
-
-  &::after {
-    content: '';
-    width: 100%;
-    height: 10px;
-
-    position: absolute;
-    bottom: 4px;
-    left: 0;
-    z-index: -1;
-
-    border-radius: 21px;
-    background-color: var(--secondary);
-
-    @include mq(desktop) {
-      height: 12px;
-      bottom: 6px;
-    }
   }
 }
