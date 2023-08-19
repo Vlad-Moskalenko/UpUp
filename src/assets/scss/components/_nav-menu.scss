@@ -1,0 +1,28 @@
+.nav {
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--text-description);
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 46px;
+
+  text-transform: capitalize;
+}
+
+.navigation_item {
+  transition: color var(--fast) linear;
+
+  &:hover,
+  &:focus {
+    color: var(--secondary);
+  }
+}
+
+.header .navigation_itemm:last-child {
+  display: none;
+}

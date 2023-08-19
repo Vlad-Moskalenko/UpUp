@@ -1,0 +1,41 @@
+.hero {
+  padding-top: 96px;
+
+  @include mq(desktop) {
+    padding-top: 138px;
+  }
+}
+
+.hero .title {
+  margin-bottom: 24px;
+
+  font-size: 28px;
+  text-align: left;
+
+  @include mq(desktop) {
+    margin-bottom: 28px;
+
+    font-size: 44px;
+  }
+}
+
+.hero__container {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @include mq(desktop) {
+    margin-bottom: 40px;
+    flex-direction: row;
+    align-items: center;
+    gap: 122px;
+  }
+}
+
+.hero__meta {
+  @include mq(desktop) {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,31 @@
+@function HexToRGB($hex) {
+  @return red($hex),
+  green($hex),
+  blue($hex);
+}
+
+:root {
+  --main: #7F3A6A;
+  --secondary: #E9A923;
+
+  /* TEXT COLORS */
+  --text-title: #313131;
+  --text-description: #585858;
+  --text-white: #FFFFFF;
+
+  /* BACKGROUND COLORS */
+  --bg-footer: #F9F1EE;
+  --bg-partners: #F1E9EE;
+  --bg-white: #FFFFFF;
+
+  /* BORDER */
+  --border-radius: 5px;
+
+  /* FONTS */
+  --primary-font: 'OpenSans', sans-serif;
+  --secondary-font: 'Exo', sans-serif;
+
+  /* ANIMATIONS SPEED */
+  --fast: 0.2s;
+  --slow: 0.4s;
+}
