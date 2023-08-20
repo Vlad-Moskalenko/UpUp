@@ -1,41 +1,74 @@
 .hero {
-  padding-top: 96px;
+  padding-top: 89px;
 
-  @include mq(desktop) {
-    padding-top: 138px;
-  }
-}
+  color: var(--text-white);
+  background-color: var(--bg-hero);
 
-.hero .title {
-  margin-bottom: 24px;
-
-  font-size: 28px;
-  text-align: left;
-
-  @include mq(desktop) {
-    margin-bottom: 28px;
-
-    font-size: 44px;
-  }
+  background-image: url('../images/hero/ellipse.svg'), url('../images/hero/yoga@1x.png'), url('../images/hero/bg-hero@1x.png');
+  background-position: bottom -113px center, 969px 53px, center;
+  background-repeat: no-repeat;
+  background-size: 1600px 176px, 929px 975px, cover;
 }
 
 .hero__container {
-  margin-bottom: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  padding-top: 160px;
+  padding-bottom: 110px;
+  margin: 0 auto;
+  max-width: 769px;
 
-  @include mq(desktop) {
-    margin-bottom: 40px;
-    flex-direction: row;
-    align-items: center;
-    gap: 122px;
-  }
+  text-align: center;
 }
 
-.hero__meta {
-  @include mq(desktop) {
-    display: flex;
-    flex-direction: column;
-  }
+.hero__trial {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -0.66px;
+  text-transform: uppercase;
+
+  color: var(--text-trial);
+}
+
+.hero__title {
+  font-size: 78px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: -3px;
+  text-transform: capitalize;
+}
+
+.hero__title--margin {
+  margin-top: 12px;
+  margin-bottom: 18px;
+}
+
+.hero__description {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.hero__description--mb {
+  margin-bottom: 37px;
+}
+
+.hero__btn {
+  padding: 15px 23px;
+  font-family: SourceSans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.59;
+  letter-spacing: -0.48px;
+  text-transform: capitalize;
+
+  color: #EB723E;
+  background-color: var(--bg-white);
+
+  border-radius: 40px;
+  border: none;
+}
+
+.scroll-btn {
+  display: block;
+  margin: 139px auto 0;
 }
