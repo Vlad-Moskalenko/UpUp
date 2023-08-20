@@ -1,10 +1,44 @@
-.about__list {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+.about__wrapper {
+  position: relative;
+  padding-top: 126px;
+  padding-bottom: 194px;
 
-  @include mq(desktop) {
-    flex-direction: row;
-    gap: 170px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 221px;
+
+  background-image: url('../images/about/love@1x.png'), url('../images/about/bg@1x.png'),
+    url('../images/about/bg2@1x.png');
+  background-position: bottom 36.65px right 102px, top 482px left 98px,
+    top -16px left 480px;
+  background-repeat: no-repeat;
+}
+
+.about__img-wrapper {
+  position: relative;
+}
+
+.about__img {
+  border-radius: 10px;
+}
+
+.img-stones {
+  position: absolute;
+  top: 301px;
+  left: 356px;
+
+  width: 198px;
+  height: 198px;
+
+  border-radius: 50%;
+  border: 8px solid var(--bg-white);
+}
+
+.about__meta {
+  width: 473px;
+}
+
+.about__meta .title--mb {
+  margin-bottom: 15px;
 }
