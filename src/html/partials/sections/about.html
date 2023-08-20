@@ -1,8 +1,46 @@
 <section id="about" class="section about">
   <div class="container about__wrapper">
     <div class="about__img-wrapper">
-      <img class="about__img" src="./assets/images/about/monica@1x.jpg" alt="" />
-      <img class="img-stones" src="./assets/images/about/stones@2x.jpg" alt="" />
+      <picture>
+        <source
+          media="(max-width: 480px)"
+          srcset="
+            ./assets/images/about/mb/monica@1x.webp 1x,
+            ./assets/images/about/mb/monica@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 480px)"
+          srcset="
+            ./assets/images/about/mb/monica@1x.jpg 1x,
+            ./assets/images/about/mb/monica@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+        <source
+          srcset="./assets/images/about/monica@1x.webp 1x, ./assets/images/about/monica@2x.webp 2x"
+          type="image/webp"
+        />
+        <source
+          srcset="./assets/images/about/monica@1x.jpg 1x, ./assets/images/about/monica@2x.jpg 2x"
+          type="image/jpg"
+        />
+        <img
+          src="./assets/images/about/monica@1x.jpg 1x"
+          alt="girl"
+          class="about__img"
+          loading="lazy"
+          width="449"
+          height="566"
+        />
+      </picture>
+      <img
+        class="img-stones"
+        loading="lazy"
+        srcset="./assets/images/about/stones@1x.jpg 1x, ./assets/images/about/stones@2x.jpg 2x"
+        alt="stones"
+      />
     </div>
     <div class="about__meta">
       <h2 class="title title--mb">One Complete Philosophy for Your Total Wellbeing</h2>

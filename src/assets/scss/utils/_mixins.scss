@@ -22,13 +22,7 @@
     @media (max-width: $mobile) {
       @content;
     }
-  }
-  @if $range ==mobileOnly {
-    @media (max-width: $desktop) {
-      @content;
-    }
-  }
-  @else if $range == desktop {
+  } @else if $range == desktop {
     @media (min-width: $desktop) {
       @content;
     }
