@@ -4,10 +4,25 @@
   color: var(--text-white);
   background-color: var(--bg-hero);
 
-  background-image: url('../images/hero/ellipse.svg'), url('../images/hero/yoga@1x.png'), url('../images/hero/bg-hero@1x.png');
-  background-position: bottom -113px center, 969px 53px, center;
+  background-image:
+    url('../images/hero/ellipse.svg'),
+    url('../images/hero/logo@1x.png'),
+    url('../images/hero/overlay@1x.png'),
+    url('../images/hero/yoga@1x.png'),
+    url('../images/hero/bg-hero@1x.png');
+  background-position:
+    bottom -113px center,
+    left -75px top 292px,
+    right 0 top,
+    left 60.56vw top 53px,
+    center;
   background-repeat: no-repeat;
-  background-size: 1600px 176px, 929px 975px, cover;
+  background-size:
+    auto,
+    auto,
+    auto,
+    auto,
+    cover;
 }
 
 .hero__container {
