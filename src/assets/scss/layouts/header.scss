@@ -18,10 +18,3 @@
   align-self: flex-start;
   gap: 20px;
 }
-
-.burger-menu {
-  @include mq(desktop) {
-    display: none;
-  }
-}
-

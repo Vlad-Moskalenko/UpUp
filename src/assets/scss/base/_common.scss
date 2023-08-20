@@ -20,8 +20,6 @@ body {
 
   font-size: 18px;
   line-height: 1.78;
-
-  background: var(--bg-white);
 }
 
 html>body>.page {
@@ -83,65 +81,17 @@ button {
 }
 
 .title {
-  margin-bottom: 40px;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 1.18;
 
-  font-family: Exo;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.4;
-  text-align: center;
-
-  color: var(--text-title);
-  text-transform: capitalize;
-
-  @include mq(desktop) {
-    font-size: 32px
-  }
-}
-
-.subtitle {
-  @extend .title;
-  margin-bottom: 16px;
-
-  font-size: 18px;
-  text-align: left;
-
-  @include mq(desktop) {
-    font-size: 24px;
-  }
+  color: var(--text-title)
 }
 
 .description {
-  font-family: OpenSans;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.78;
 
   color: var(--text-description);
-}
-
-.accent-btn {
-  width: 170px;
-  padding: 12px 24px;
-
-  font-family: OpenSans;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.5;
-  text-transform: capitalize;
-
-  border-radius: 5px;
-  background: var(--secondary);
-
-  transition: background-color var(--fast) linear, color var(--fast) linear;
-
-  &:hover,
-  &:focus {
-    color: var(--main);
-    background-color: var(--bg-white);
-  }
-
-  @include mq(desktop) {
-    font-weight: 700 ;
-  }
 }
