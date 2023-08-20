@@ -1,6 +1,4 @@
 .header {
-  padding-top: 31px;
-  padding-bottom: 31px;
   width: 100%;
 
   position: absolute;
@@ -8,13 +6,89 @@
 }
 
 .header__container {
+  padding: 31px 180px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include mq(mobile) {
+    padding: 13px 10px;
+  }
 }
 
 .btn-wrapper {
   display: flex;
-  align-self: flex-start;
+  align-self: baseline;
   gap: 20px;
+
+  @include mq(mobile) {
+    margin-right: 8px;
+    align-self: center;
+  }
+}
+
+.header__btn {
+  color: var(--bg-white);
+
+  transition: color var(--fast) linear;
+
+  &:hover {
+    color: var(--text-title);
+  }
+
+  @include mq(mobile) {
+    display: none;
+  }
+}
+
+.basket-btn {
+  padding: 1px 13px;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: 29px;
+
+  color: var(--main);
+  background-color: var(--bg-white);
+
+  transition: color var(--fast) linear, background-color var(--fast) linear;
+
+  &:hover,
+  &:focus {
+    color: var(--bg-white);
+    background-color: var(--bg-hero);
+  }
+
+  svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  @include mq(mobile) {
+    margin-right: 16px;
+
+    svg {
+      width: 26.5px;
+      height: 26.5px;
+    }
+  }
+}
+
+.burger-menu {
+  display: none;
+
+  color: var(--bg-white);
+
+  transition: color var(--fast) linear;
+
+  &:hover,
+  &:focus {
+    color: var(--text-title);
+  }
+
+  @include mq(mobile) {
+    display: block;
+  }
 }

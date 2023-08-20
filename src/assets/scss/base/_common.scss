@@ -85,7 +85,11 @@ button {
   font-weight: 600;
   line-height: 1.18;
 
-  color: var(--text-title)
+  color: var(--text-title);
+
+  @include mq(mobile) {
+    font-size: 32px;
+  }
 }
 
 .description {
@@ -94,4 +98,23 @@ button {
   line-height: 1.78;
 
   color: var(--text-description);
+}
+
+.logo {
+  width: 129px;
+  height: 58px;
+
+  color: var(--text-white);
+
+  transition: color var(--fast) linear;
+
+  &:hover,
+  &:focus {
+    color: var(--text-title);
+  }
+
+  @include mq(mobile) {
+    width: 107px;
+    height: 48px;
+  }
 }

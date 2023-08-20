@@ -15,14 +15,20 @@
 
 /* MEDIA QUERIES*/
 @mixin mq($range) {
-  $mobile: 375px;
-  $desktop: 1440px;
+  $mobile: 480px;
+  $desktop: 1280px;
 
   @if $range == mobile {
-    @media (min-width: $mobile) {
+    @media (max-width: $mobile) {
       @content;
     }
-  } @else if $range == desktop {
+  }
+  @if $range ==mobileOnly {
+    @media (max-width: $desktop) {
+      @content;
+    }
+  }
+  @else if $range == desktop {
     @media (min-width: $desktop) {
       @content;
     }

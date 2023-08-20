@@ -1,13 +1,20 @@
 .nav {
+  margin-left: 25px;
+
   font-family: Poppins;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.44;
   letter-spacing: -0.72px;
+
   color: var(--text-white);
+
+  @include mq(mobile) {
+    display: none;
+  }
 }
 
-.navigation {
+.navigation__list {
   display: flex;
   justify-content: center;
   gap: 50px;
@@ -15,15 +22,11 @@
   text-transform: capitalize;
 }
 
-.navigation_item {
+.navigation__item {
   transition: color var(--fast) linear;
 
   &:hover,
   &:focus {
-    color: var(--secondary);
+    color: var(--text-title);
   }
-}
-
-.header .navigation_itemm:last-child {
-  display: none;
 }

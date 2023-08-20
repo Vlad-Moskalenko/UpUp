@@ -1,5 +1,11 @@
 .hero {
   padding-top: 89px;
+  padding-left: 180px;
+  padding-right: 180px;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
 
   color: var(--text-white);
   background-color: var(--bg-hero);
@@ -18,20 +24,47 @@
     center;
   background-repeat: no-repeat;
   background-size:
+    contain,
     auto,
     auto,
-    auto,
-    auto,
+    103vh,
     cover;
+
+  @include mq(mobile) {
+    padding: 74px 8px 0;
+    min-height: 866px;
+
+    align-items: flex-start;
+
+    background-color: var(--bg-white);
+    background-image:
+      url('../images/hero/mb/yoga@1x.png'),
+      // url('../images/hero/ellipse.svg'),
+      url('../images/hero/logo@1x.png'),
+      url('../images/hero/mb/bg-mobile@1x.png');
+    background-position:
+      bottom center,
+      // bottom -10px center,
+      left -107px top 414px,
+      bottom 54px center;
+    background-repeat: no-repeat;
+    background-size:
+      auto,
+      // contain,
+      215px 261px,
+      cover;
+  }
 }
 
 .hero__container {
-  padding-top: 160px;
-  padding-bottom: 110px;
-  margin: 0 auto;
-  max-width: 769px;
+  margin: 50px auto 0;
+  width: 769px;
 
   text-align: center;
+
+  @include mq(mobile) {
+    margin-top: 36px;
+  }
 }
 
 .hero__trial {
@@ -42,6 +75,11 @@
   text-transform: uppercase;
 
   color: var(--text-trial);
+
+  @include mq(mobile) {
+    font-size: 15px;
+    letter-spacing: -0.45px;
+  }
 }
 
 .hero__title {
@@ -50,21 +88,42 @@
   line-height: 1.11;
   letter-spacing: -3px;
   text-transform: capitalize;
+
+  @include mq(mobile) {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -3px;
+  }
 }
 
 .hero__title--margin {
   margin-top: 12px;
   margin-bottom: 18px;
+
+  @include mq(mobile) {
+    margin-top: 10px;
+  }
 }
 
 .hero__description {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.6;
+
+  @include mq(mobile) {
+    font-size: 18px;
+    line-height: 1.44;
+  }
 }
 
 .hero__description--mb {
   margin-bottom: 37px;
+
+  @include mq(mobile) {
+    margin-bottom: 20px;
+  }
+
 }
 
 .hero__btn {
@@ -76,14 +135,35 @@
   letter-spacing: -0.48px;
   text-transform: capitalize;
 
-  color: #EB723E;
+  color: var(--main);
   background-color: var(--bg-white);
 
   border-radius: 40px;
   border: none;
+
+  transition: color var(--fast) linear, background-color var(--fast) linear;
+
+  &:hover,
+  &:focus {
+    color: var(--text-white);
+    background-color: var(--main);
+  }
 }
 
 .scroll-btn {
   display: block;
-  margin: 139px auto 0;
+  margin: 15.4vh auto 0;
+
+  color: var(--text-white);
+
+  transition: color var(--fast) linear;
+
+  &:hover,
+  &:focus {
+    color: var(--text-title);
+  }
+
+  @include mq(mobile) {
+    display: none;
+  }
 }

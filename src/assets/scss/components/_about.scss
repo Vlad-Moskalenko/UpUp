@@ -13,30 +13,66 @@
   background-position: bottom 36.65px right 102px, top 482px left 98px,
     top -16px left 480px;
   background-repeat: no-repeat;
+
+  @include mq(mobile) {
+    padding: 15px 15px 109.6px;
+
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 42px;
+
+    background-image: url('../images/about/bg@1x.png'),
+      url('../images/about/bg2@1x.png');
+    background-position: top 622.3px left 43px, top 256px left 231px;
+    background-repeat: no-repeat;
+    background-size: 220px 140px, 181px 291px;
+  }
 }
 
 .about__img-wrapper {
   position: relative;
+
+  @include mq(mobile) {
+    padding-right: 63.4px;
+  }
 }
 
 .about__img {
+  width: 100%;
   border-radius: 10px;
+
+  @include mq(mobile) {
+    width: 281.6px;
+  }
 }
 
 .img-stones {
   position: absolute;
   top: 301px;
-  left: 356px;
+  right: -97px;
 
   width: 198px;
   height: 198px;
 
   border-radius: 50%;
   border: 8px solid var(--bg-white);
+
+
+  @include mq(mobile) {
+    top: 185px;
+    right: -5px;
+
+    width: 130px;
+    height: 130px;
+  }
 }
 
 .about__meta {
   width: 473px;
+
+  @include mq(mobile) {
+    width: 100%;
+  }
 }
 
 .about__meta .title--mb {
