@@ -22,7 +22,7 @@
   }
 }
 
-.btn-wrapper {
+.btn-list {
   display: flex;
   align-self: baseline;
   gap: 20px;
@@ -83,7 +83,7 @@
   }
 }
 
-.burger-menu {
+.burger-btn {
   display: none;
 
   color: var(--bg-white);
@@ -93,6 +93,8 @@
   &:hover,
   &:focus {
     color: var(--hover);
+    transform: scale(1.15);
+    outline: none;
   }
 
   @include mq(mobile) {

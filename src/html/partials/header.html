@@ -6,28 +6,35 @@
       </svg>
     </a>
     {% include 'components/nav-menu.html' %}
-    <div class="btn-wrapper">
-      <button class="header__btn" type="button" aria-label="search">
-        <svg width="29px" height="29px">
-          <use href="./assets/images/sprite.svg#icon-search"></use>
-        </svg>
-      </button>
-      <button class="header__btn" type="button" aria-label="login">
-        <svg width="21.2px" height="26.5px">
-          <use href="./assets/images/sprite.svg#icon-user"></use>
-        </svg>
-      </button>
-      <button class="header__btn basket-btn" type="button" aria-label="basket">
+    <ul class="btn-list">
+      <li>
+        <button class="header__btn" type="button" aria-label="search">
+          <svg width="29px" height="29px">
+            <use href="./assets/images/sprite.svg#icon-search"></use>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button class="header__btn" type="button" aria-label="login">
+          <svg width="21.2px" height="26.5px">
+            <use href="./assets/images/sprite.svg#icon-user"></use>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button class="header__btn basket-btn" type="button" aria-label="basket">
           <svg>
             <use href="./assets/images/sprite.svg#icon-basket"></use>
           </svg>
-        </picture>
-      </button>
-      <button class="burger-menu" type="button" aria-label="navigation menu" data-burger-menu>
-        <svg width="28px" height="28px">
-          <use href="./assets/images/sprite.svg#icon-burger"></use>
-        </svg>
-      </button>
-    </div>
+        </button>
+      </li>
+      <li>
+        <button class="burger-btn" type="button" aria-label="navigation menu" data-burger-menu>
+          <svg width="28px" height="28px">
+            <use href="./assets/images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
   </div>
 </header>
