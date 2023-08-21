@@ -16,6 +16,7 @@
 /* MEDIA QUERIES*/
 @mixin mq($range) {
   $mobile: 480px;
+  $laptop: 1280px;
   $desktop: 1600px;
 
   @if $range == mobile {
@@ -23,7 +24,7 @@
       @content;
     }
   } @else if $range == laptop {
-    @media (max-width: calc($desktop - 1px)) {
+    @media (min-width: $laptop) {
       @content;
     }
   } @else if $range == desktop {

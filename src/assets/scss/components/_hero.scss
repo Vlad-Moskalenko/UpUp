@@ -1,7 +1,5 @@
 .hero {
   padding-top: 89px;
-  padding-left: 180px;
-  padding-right: 180px;
   min-height: 100vh;
 
   display: flex;
@@ -25,15 +23,10 @@
   background-repeat: no-repeat;
   background-size:
     contain,
-    auto,
-    auto,
+    424px 515px,
+    1105px 900px,
     103vh,
     cover;
-
-  @include mq(laptop) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 
   @include mq(retina) {
     background-image:
@@ -45,7 +38,7 @@
   }
 
   @include mq(mobile) {
-    padding: 74px 8px 0;
+    padding-top: 74px;
     min-height: 866px;
 
     align-items: flex-start;
@@ -76,7 +69,6 @@
 
 .hero__container {
   margin: 50px auto 0;
-  width: 769px;
 
   text-align: center;
 
@@ -101,6 +93,9 @@
 }
 
 .hero__title {
+  margin: 0 auto;
+  max-width: 769px;
+
   font-size: 78px;
   font-weight: 700;
   line-height: 1.11;

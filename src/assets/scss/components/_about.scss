@@ -25,7 +25,8 @@
   }
 
   @include mq(mobile) {
-    padding: 15px 15px 109.6px;
+    padding-top: 15px;
+    padding-bottom: 109.6px;
 
     flex-direction: column-reverse;
     align-items: flex-start;
