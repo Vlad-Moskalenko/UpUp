@@ -12,6 +12,11 @@
   justify-content: space-between;
   align-items: center;
 
+  @include mq(laptop) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   @include mq(mobile) {
     padding: 13px 10px;
   }
@@ -31,10 +36,13 @@
 .header__btn {
   color: var(--bg-white);
 
-  transition: color var(--fast) linear;
+  transition: var(--hover-transition);
 
-  &:hover {
-    color: var(--text-title);
+  &:hover,
+  &:focus {
+    color: var(--hover);
+    transform: scale(1.15);
+    outline: none;
   }
 
   @include mq(mobile) {
@@ -53,12 +61,13 @@
   color: var(--main);
   background-color: var(--bg-white);
 
-  transition: color var(--fast) linear, background-color var(--fast) linear;
+  transition: var(--hover-transition);
 
   &:hover,
-  &:focus {
-    color: var(--bg-white);
-    background-color: var(--bg-hero);
+  & a:focus {
+    color: var(--hover);
+    transform: scale(1.15);
+    outline: none;
   }
 
   svg {
@@ -81,11 +90,11 @@
 
   color: var(--bg-white);
 
-  transition: color var(--fast) linear;
+  transition: var(--hover-transition);
 
   &:hover,
   &:focus {
-    color: var(--text-title);
+    color: var(--hover);
   }
 
   @include mq(mobile) {

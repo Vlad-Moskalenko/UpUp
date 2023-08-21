@@ -30,6 +30,11 @@
     103vh,
     cover;
 
+  @include mq(laptop) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   @include mq(retina) {
     background-image:
       url('../images/hero/ellipse.svg'),
@@ -154,12 +159,14 @@
   border-radius: 40px;
   border: none;
 
-  transition: color var(--fast) linear, background-color var(--fast) linear;
+  transition: var(--hover-transition);
 
   &:hover,
   &:focus {
     color: var(--text-white);
     background-color: var(--main);
+    transform: scale(1.1);
+    outline: none;
   }
 }
 
@@ -169,11 +176,13 @@
 
   color: var(--text-white);
 
-  transition: color var(--fast) linear;
+  transition: var(--hover-transition);
 
   &:hover,
   &:focus {
-    color: var(--text-title);
+    color: var(--hover);
+    transform: scale(1.15);
+    outline: none;
   }
 
   @include mq(mobile) {

@@ -58,6 +58,8 @@
   width: 100%;
   border-radius: 10px;
 
+  box-shadow: 0px 52px 54px 0px rgba(65, 62, 101, 0.30);
+
   @include mq(mobile) {
     width: 281.6px;
   }
@@ -74,6 +76,7 @@
   border-radius: 50%;
   border: 8px solid var(--bg-white);
 
+  filter: drop-shadow(0px 52px 54px rgba(65, 62, 101, 0.30));
 
   @include mq(mobile) {
     top: 185px;

@@ -100,18 +100,21 @@ button {
   color: var(--text-description);
 }
 
+.link {
+  transition: var(--hover-transition);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.15);
+    outline: none;
+  }
+}
+
 .logo {
   width: 129px;
   height: 58px;
 
   color: var(--text-white);
-
-  transition: color var(--fast) linear;
-
-  &:hover,
-  &:focus {
-    color: var(--text-title);
-  }
 
   @include mq(mobile) {
     width: 107px;

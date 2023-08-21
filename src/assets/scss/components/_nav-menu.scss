@@ -23,10 +23,12 @@
 }
 
 .navigation__item {
-  transition: color var(--fast) linear;
+  transition: var(--hover-transition);
 
   &:hover,
-  &:focus {
-    color: var(--text-title);
+  & a:focus {
+    color: var(--hover);
+    transform: scale(1.15);
+    outline: none;
   }
 }
