@@ -168,6 +168,10 @@
     transform: scale(1.1);
     outline: none;
   }
+
+  @include mq(mobile) {
+    padding: 17px 26px;
+  }
 }
 
 .scroll-btn {

@@ -23,7 +23,7 @@
       @content;
     }
   } @else if $range == laptop {
-    @media (max-width: $desktop) {
+    @media (max-width: calc($desktop - 1px)) {
       @content;
     }
   } @else if $range == desktop {
