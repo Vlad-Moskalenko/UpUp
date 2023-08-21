@@ -28,13 +28,15 @@
     103vh,
     cover;
 
-  @include mq(retina) {
-    background-image:
-      url('../images/hero/ellipse.svg'),
-      url('../images/hero/logo@2x.png'),
-      url('../images/hero/overlay@2x.png'),
-      url('../images/hero/yoga@2x.png'),
-      url('../images/hero/bg-hero@2x.png');
+  @include mq(laptop) {
+    @include mq(retina) {
+      background-image:
+        url('../images/hero/ellipse.svg'),
+        url('../images/hero/logo@2x.png'),
+        url('../images/hero/overlay@2x.png'),
+        url('../images/hero/yoga@2x.png'),
+        url('../images/hero/bg-hero@2x.png');
+    }
   }
 
   @include mq(mobile) {
