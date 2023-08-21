@@ -28,9 +28,17 @@
   align-self: baseline;
   gap: 20px;
 
+  li:last-child {
+    display: none;
+  }
+
   @include mq(mobile) {
     align-self: center;
     gap: 16px;
+
+    li:last-child {
+      display: block;
+    }
   }
 }
 
